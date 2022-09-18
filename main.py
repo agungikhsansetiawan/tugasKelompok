@@ -1,4 +1,5 @@
 from math_function import add
+from modulo import mod
 
 
 def main():
@@ -9,6 +10,8 @@ def main():
 
     if operator == "+":
         result = add(data_1, data_2)
+    elif operator == "%":
+        result = mod(data_1, data_2)
 
     print("{} {} {} = {} ".format(data_1, operator, data_2, result))
 
